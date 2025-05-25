@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Save the updated messages data
     file_put_contents('../db/messages.json', json_encode($messages));
 
-    header("Location: index.php");
+    header("Location: index.html");
     exit;
 }
 ?>
